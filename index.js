@@ -4,7 +4,7 @@ function driversWithRevenueOver (drivers, revenue) {
 }
 
 function driverNamesWithRevenueOver(drivers, revenue) {
-  return driversWithRevenueOver(drivers, revenue).map( function(driver) { return driver.name; });
+  return driversWithRevenueOver(drivers, revenue).map( function(driver) { return driver.name; } );
 }
 
 function exactMatch(drivers, attribute) {
@@ -17,6 +17,6 @@ function exactMatch(drivers, attribute) {
   });
 }
 
-function exactMatchToList() {
-
+function exactMatchToList(drivers, attribute) {
+  return exactMatch(drivers, attribute).map( function(driver) { return driver.name; } );
 }
