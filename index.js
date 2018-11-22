@@ -14,7 +14,7 @@ function exactMatch(drivers, attribute) {
       exact = driver[key] === attribute[key];
     }
   return exact;
-});
+  });
 }
 
 function exactMatchToList() {
